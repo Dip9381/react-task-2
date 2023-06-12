@@ -1,0 +1,68 @@
+#calc{
+    display: flex;
+    border: 1px solid black;
+    width: 300px;
+    height: 200px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+#calc>div{
+    width: 25%;
+    text-align: center;
+}
+#calc>div>div{
+    border: 0.1px solid rgba(0, 0, 0, 0.434);
+}
+#calc>div>div,#calc>div{
+    border-collapse: collapse;
+}
+#calc>div:nth-child(1)>div,#calc>div:nth-child(2)>div,#calc>div:nth-child(3)>div{
+    height: 24%;
+    cursor: pointer;
+}
+#calc>div:nth-child(4)>div{
+    height: 19%;
+    cursor: pointer;
+}
+#disp{
+    height: 200px;
+    border: 1px solid black;
+    width: 300px;
+    overflow: scroll;
+    background-color: rgb(1, 107, 107);
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+#result{
+    float: right;
+}
+/* Hide scrollbar for Chrome, Safari and Opera */
+#disp::-webkit-scrollbar {
+    display: none;
+  }
+  
+  /* Hide scrollbar for IE, Edge and Firefox */
+  #disp {
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+  }
+  #hist{
+    background-color: rgb(79, 255, 255);
+  }
+  #live{
+    color: white;
+  }
+  .a{
+    background-color: rgb(189, 65, 189);
+    color: white;
+    line-height: 3;
+  }
+  #calc>div:nth-child(4)>.a{
+    line-height: 2.2;
+  }
+  #body{
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 100px;
+    width: 20%;
+  }
